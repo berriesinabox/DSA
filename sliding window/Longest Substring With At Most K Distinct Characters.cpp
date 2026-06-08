@@ -7,7 +7,7 @@ public:
         for(int right=0;right<s.length();right++){
             mpp[s[right]]++;
 
-            while(mpp.size() > k){
+            if(mpp.size() > k){
                 mpp[s[left]]--;
 
                 if(mpp[s[left]]==0){
